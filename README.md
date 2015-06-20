@@ -7,10 +7,12 @@ Apache fcgi php
 1 Upload file to /etc/fail2ban/filter.d
 2 Edit your jail.local by adding :
 
+```
 [apache-fcgi-botsearch]
 enabled = true
 port     = http,https
 logpath  = %(apache_error_log)s
+```
 
 If your fail2ban is installed from distros, have a chance it does not starting the apache filters.
 The issue has been fixed in new release of 0.9.2 from (2015/04/29).
